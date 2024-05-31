@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                git branch: 'main', url: 'https://github.com/rjtax78/node_react.git'
                 sh 'npm install'
             }
         }
